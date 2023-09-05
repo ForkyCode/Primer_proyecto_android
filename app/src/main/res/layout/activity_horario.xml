@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#132567"
+    tools:context=".horario">
+
+    <ImageButton
+        android:id="@+id/btn_previous"
+        android:layout_width="58dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="#BD2424"
+        android:onClick="onClickBtnprevious"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hora4"
+        app:srcCompat="@drawable/anterior" />
+
+    <TextView
+        android:id="@+id/hora2"
+        android:layout_width="174dp"
+        android:layout_height="31dp"
+        android:text="Lunes a Viernes"
+        android:textAlignment="center"
+        android:textColor="#EEE2DE"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+    <TextView
+        android:id="@+id/hora3"
+        android:layout_width="174dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="15dp"
+        android:text="Sabado y Domingo"
+        android:textAlignment="center"
+        android:textColor="#EEE2DE"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hora1" />
+
+    <TextView
+        android:id="@+id/hora1"
+        android:layout_width="293dp"
+        android:layout_height="40dp"
+        android:text="8:00 am / 5:00 pm"
+        android:textAlignment="center"
+        android:textColor="#EEE2DE"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hora2" />
+
+    <TextView
+        android:id="@+id/hora4"
+        android:layout_width="293dp"
+        android:layout_height="40dp"
+        android:text="8:00 am / 3:00 pm"
+        android:textAlignment="center"
+        android:textColor="#EEE2DE"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hora3" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="372dp"
+        android:layout_height="226dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/candy_cars_logo_2" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:srcCompat="@drawable/reloj" />
+</androidx.constraintlayout.widget.ConstraintLayout>

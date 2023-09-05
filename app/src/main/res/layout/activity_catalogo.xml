@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    tools:context=".catalogo">
+
+    <TextView
+        android:id="@+id/BMW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMW"
+        android:textColor="#EEE2DE"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnbmw" />
+
+    <TextView
+        android:id="@+id/Subaru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="SUBARU"
+        android:textColor="#EEE2DE"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsub" />
+
+    <TextView
+        android:id="@+id/Nissan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="61dp"
+        android:text="NISSAN"
+        android:textColor="#EEE2DE"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnnis" />
+
+    <ImageView
+        android:id="@+id/ImageView3"
+        android:layout_width="385dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="28dp"
+        android:background="#01111111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/candy_cars_logo" />
+
+    <ImageButton
+        android:id="@+id/btnbmw"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#BD2424"
+        android:onClick="onClickBtnbmw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageView3"
+        app:srcCompat="@drawable/bmw" />
+
+    <ImageButton
+        android:id="@+id/btnsub"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="#BD2424"
+        android:onClick="onClickBtnsub"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageView3"
+        app:srcCompat="@drawable/subaru" />
+
+    <ImageButton
+        android:id="@+id/btnhome1"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="148dp"
+        android:backgroundTint="#BD2424"
+        android:onClick="onClickBtnhome1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BMW"
+        app:srcCompat="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/btnnis"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#BD2424"
+        android:onClick="onClickBtnnis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImageView3"
+        app:srcCompat="@drawable/nissanlogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

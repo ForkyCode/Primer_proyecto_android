@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#132567"
+    tools:context=".Menu">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="385dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/candy_cars_logo_2" />
+
+    <TextView
+        android:id="@+id/hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="78dp"
+        android:text="Horario"
+        android:textColor="#EEE2DE"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnhora" />
+
+    <TextView
+        android:id="@+id/direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:text="Dirección"
+        android:textColor="#EEE2DE"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndirec" />
+
+    <TextView
+        android:id="@+id/carro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catalogo"
+        android:textColor="#EEE2DE"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncar" />
+
+    <ImageButton
+        android:id="@+id/btnhora"
+        android:layout_width="111dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="#BD2424"
+        android:onClick="onClickBtnHora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/time" />
+
+    <ImageButton
+        android:id="@+id/btndirec"
+        android:layout_width="111dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#BD2424"
+        android:onClick="onClickBtnDirec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/direccion" />
+
+    <ImageButton
+        android:id="@+id/btncar"
+        android:layout_width="111dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="280dp"
+        android:backgroundTint="#BD2424"
+        android:onClick="onClickBtnCar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/carros" />
+
+    <TextView
+        android:id="@+id/tvrecibe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:hint="Bienvenido Nombre Apellido"
+        android:textColor="#EEE2DE"
+        android:textColorHint="#EEE2DE"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
